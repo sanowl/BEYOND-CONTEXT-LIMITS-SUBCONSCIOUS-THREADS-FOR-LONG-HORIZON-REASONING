@@ -278,7 +278,7 @@ This implementation is based on the research paper:
 
 **Abstract:** The paper introduces TIM and TIMRUN as solutions for breaking LLM context limits, enabling long-horizon reasoning, efficient memory management, and multi-hop tool integration.
 
-**arXiv:** 2507.16784v1 [cs.CL] 22 Jul 2024
+**arXiv:** 2507.16784v1 [cs.CL] 22 Jul 2025
 
 If you use this implementation, please cite the original paper.
 
