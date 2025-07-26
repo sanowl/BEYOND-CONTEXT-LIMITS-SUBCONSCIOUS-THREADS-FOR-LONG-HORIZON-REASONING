@@ -13,6 +13,7 @@ import jsonschema
 from dataclasses import dataclass
 
 from tim_model import Task, ToolUse, TimResponse, SearchTool, WebReaderTool
+import secrets
 
 
 class GenerationState(Enum):
@@ -228,9 +229,7 @@ class ConstrainedJSONGenerator:
         if temperature == 0.0:
             return valid_tokens[0]
         else:
-            # Random selection weighted by temperature
-            import random
-            return random.choice(valid_tokens)
+            return secrets.choice(valid_tokens)
     
     def _update_constraint_state(self, 
                                 constraint_state: ConstraintState, 
