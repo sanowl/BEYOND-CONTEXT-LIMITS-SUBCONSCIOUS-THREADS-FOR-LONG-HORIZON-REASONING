@@ -14,13 +14,21 @@ requests>=2.28.0
 
 # Note: sqlite3 is built-in with Python (no separate install needed)
 
-# Optional dependencies for enhanced functionality
-# Uncomment if needed:
+# Optional dependencies for production TIM implementation
+# Uncomment based on your needs:
 
-# For actual LLM integration:
+# For Transformers backend (real TIM implementation):
 # torch>=2.0.0
-# transformers>=4.30.0
+# transformers>=4.35.0
 # accelerate>=0.20.0
+# flash-attn>=2.3.0
+
+# For vLLM backend (production inference):
+# vllm>=0.2.0
+# ray>=2.8.0
+
+# For enhanced JSON processing:
+# jsonpath-ng>=1.5.0
 
 # For production deployment:
 # fastapi>=0.100.0
